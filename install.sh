@@ -5,12 +5,12 @@ echo "Cleaning temp folder"
 sudo rm ./temp/* -r
 
 else
-   echo "Downloading modules"
-fi
-
+	echo "Downloading modules"
 	cd temp
-	while read i;
-		do
-	git clone $i;
 
-	done < ../modules.txt
+while read i;
+                do
+        git clone $i;
+
+        done < ../modules.txt
+fi
